@@ -25,12 +25,15 @@ export default function Hero() {
         />
       </motion.div>
 
-      <div className="relative z-10 text-center text-white">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
-          ОТКРОЙ
+      <div className="relative z-10 text-center text-white px-6">
+        <p className="text-xs md:text-sm uppercase tracking-[0.3em] mb-6 opacity-80 font-light">
+          6 июня 2026 года
+        </p>
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 leading-tight">
+          Дмитрий<br />&amp; Нина
         </h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto px-6 opacity-90">
-          Исследуй границы дизайна с иммерсивным параллакс-эффектом
+        <p className="text-base md:text-lg max-w-xl mx-auto opacity-90 font-light leading-relaxed">
+          С огромной радостью приглашаем вас разделить с нами<br className="hidden md:block" /> самый счастливый день в нашей жизни
         </p>
       </div>
     </div>
