@@ -1,12 +1,30 @@
 import { useState } from "react";
 
+const RSVP_URL = "https://functions.poehali.dev/97d6444a-3bd3-4a30-9f6f-f14860ded15b";
+
 export default function RSVP() {
   const [form, setForm] = useState({ name: "", guests: "1", attending: "yes", comment: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError("");
+    try {
+      const res = await fetch(RSVP_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error("Ошибка отправки");
+      setSubmitted(true);
+    } catch {
+      setError("Не удалось отправить. Попробуйте ещё раз.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -102,12 +120,16 @@ export default function RSVP() {
               />
             </div>
 
+            {error && (
+              <p className="text-xs text-center" style={{ color: '#c4977a', fontFamily: "'Montserrat', sans-serif" }}>{error}</p>
+            )}
             <button
               type="submit"
-              className="mt-4 w-full py-4 text-xs uppercase tracking-[0.3em] transition-all duration-300 hover:opacity-80"
+              disabled={loading}
+              className="mt-4 w-full py-4 text-xs uppercase tracking-[0.3em] transition-all duration-300 hover:opacity-80 disabled:opacity-50"
               style={{ backgroundColor: '#4a3728', color: '#fdf8f5', fontFamily: "'Montserrat', sans-serif" }}
             >
-              Подтвердить присутствие
+              {loading ? 'Отправляем...' : 'Подтвердить присутствие'}
             </button>
           </form>
         )}
