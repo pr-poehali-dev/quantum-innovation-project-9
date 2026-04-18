@@ -5,6 +5,20 @@
       "method": "OPTIONS",
       "path": "/",
       "expectedStatus": 200
+    },
+    {
+      "name": "Test RSVP email",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "name": "Тестовый гость",
+        "attending": "yes",
+        "guests": "2",
+        "comment": "Проверка отправки"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {"ok": true},
+      "bodyMatcher": "partial"
     }
   ]
 }
