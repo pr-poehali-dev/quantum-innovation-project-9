@@ -18,23 +18,26 @@ export default function Promo() {
       <div className="fixed top-[-10vh] left-0 h-[120vh] w-full">
         <motion.div style={{ y }} className="relative w-full h-full">
           <img
-            src="/images/spiral-circles.jpg"
-            alt="Abstract spiral circles"
+            src="https://cdn.poehali.dev/projects/4bdc9d0f-dff4-4977-9f32-24463f5c9ef9/files/529de0ba-d079-4db8-9009-d9ee59d9549e.jpg"
+            alt="Свадебный ужин"
             className="w-full h-full object-cover"
           />
+          <div className="absolute inset-0 bg-black/40" />
         </motion.div>
       </div>
 
-      <h3 id="dresscode" className="absolute top-12 right-6 text-white uppercase z-10 text-sm md:text-base lg:text-lg tracking-widest">
+      <h3 id="dresscode" className="absolute top-12 left-6 text-white uppercase z-10 text-xs tracking-[0.3em]" style={{ fontFamily: "'Montserrat', sans-serif" }}>
         Дресс-код & пожелания
       </h3>
 
-      <div className="absolute bottom-12 right-6 z-10 text-right max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl">
-        <p className="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-snug mb-6">
-          Просим выбрать наряды в нежных светлых оттенках.
+      <div className="absolute bottom-12 left-6 z-10 text-left max-w-xs sm:max-w-md md:max-w-lg">
+        <p className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light italic leading-snug mb-5">
+          Нежные светлые оттенки — наш дресс-код.
         </p>
-        <p className="text-white/80 text-sm md:text-base lg:text-lg leading-relaxed">
-          Мы хотим создать особую атмосферу праздника — просим воздержаться от криков «Горько!».<br />
+        <p className="text-white/80 text-sm md:text-base leading-relaxed font-light" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+          Мы мечтаем о тёплой и душевной атмосфере праздника —<br />
+          просим воздержаться от криков «Горько!».<br className="hidden md:block" />
+          <br />
           Будем искренне благодарны подаркам в денежном эквиваленте.
         </p>
       </div>
