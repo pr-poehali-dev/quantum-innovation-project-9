@@ -19,7 +19,7 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full"
       >
         <img
-          src="https://cdn.poehali.dev/projects/4bdc9d0f-dff4-4977-9f32-24463f5c9ef9/files/549b8313-5151-430a-bbc1-a82a29d85147.jpg"
+          src="https://cdn.poehali.dev/projects/4bdc9d0f-dff4-4977-9f32-24463f5c9ef9/files/b799ec5c-99dc-41d4-865f-5f887cd38ba0.jpg"
           alt="Свадебная церемония"
           className="w-full h-full object-cover"
         />
@@ -34,9 +34,10 @@ export default function Hero() {
           Дмитрий<br /><span className="not-italic font-thin opacity-70">&amp;</span><br />Нина
         </h1>
         <div className="w-16 h-px bg-white/60 mx-auto mb-6" />
-        <p className="text-base md:text-lg max-w-lg mx-auto opacity-85 font-light leading-relaxed">
-          Дорогие наши близкие и друзья, с огромной радостью<br className="hidden md:block" />
-          приглашаем вас разделить с нами самый счастливый день
+        <p className="text-base md:text-lg max-w-lg mx-auto opacity-85 font-light leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+          Дорогие наши близкие и друзья,<br />
+          с огромной радостью приглашаем вас разделить с нами<br className="hidden md:block" />
+          самый счастливый и светлый день нашей жизни
         </p>
         <a
           href="#details"

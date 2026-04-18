@@ -66,7 +66,7 @@ def handler(event: dict, context) -> dict:
 
     smtp_password = os.environ.get('SMTP_PASSWORD', '')
     sender = 'mukhampedyanova@mail.ru'
-    recipient = 'mukhampedyanova@mail.ru'
+    recipient = 'ninadima_06_2026@mail.ru'
 
     msg = MIMEMultipart('alternative')
     msg['Subject'] = f'RSVP: {name} — {attending_text}'

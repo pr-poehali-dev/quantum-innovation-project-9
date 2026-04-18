@@ -18,7 +18,7 @@ export default function Promo() {
       <div className="fixed top-[-10vh] left-0 h-[120vh] w-full">
         <motion.div style={{ y }} className="relative w-full h-full">
           <img
-            src="https://cdn.poehali.dev/projects/4bdc9d0f-dff4-4977-9f32-24463f5c9ef9/files/529de0ba-d079-4db8-9009-d9ee59d9549e.jpg"
+            src="https://cdn.poehali.dev/projects/4bdc9d0f-dff4-4977-9f32-24463f5c9ef9/files/3822a8c1-a6c7-4db5-9d9f-c44023727825.jpg"
             alt="Свадебный ужин"
             className="w-full h-full object-cover"
           />
@@ -35,10 +35,11 @@ export default function Promo() {
           Нежные светлые оттенки — наш дресс-код.
         </p>
         <p className="text-white/80 text-sm md:text-base leading-relaxed font-light" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-          Мы мечтаем о тёплой и душевной атмосфере праздника —<br />
-          просим воздержаться от криков «Горько!».<br className="hidden md:block" />
+          Мы мечтаем о тёплой, душевной и по-особенному нежной атмосфере —<br />
+          поэтому просим воздержаться от возгласов «Горько!».<br className="hidden md:block" />
           <br />
-          Будем искренне благодарны подаркам в денежном эквиваленте.
+          Если вы захотите порадовать нас подарком —<br />
+          будем искренне благодарны вашей щедрости в денежном эквиваленте.
         </p>
       </div>
     </div>
