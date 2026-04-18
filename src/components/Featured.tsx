@@ -9,8 +9,8 @@ export default function Featured() {
     <div id="details" className="flex flex-col lg:flex-row lg:justify-between lg:items-center min-h-screen px-6 py-12 lg:py-0" style={{ backgroundColor: '#fdf8f5' }}>
       <div className="flex-1 h-[400px] lg:h-[800px] mb-8 lg:mb-0 lg:order-2">
         <img
-          src="https://cdn.poehali.dev/projects/4bdc9d0f-dff4-4977-9f32-24463f5c9ef9/files/5f75493f-a661-4699-984d-bd1f8a3ed09d.jpg"
-          alt="Свадебные детали"
+          src="https://cdn.poehali.dev/projects/4bdc9d0f-dff4-4977-9f32-24463f5c9ef9/bucket/0ed4de32-8e35-4c88-8983-e628f3d1bc18.jpeg"
+          alt="Кольца Дмитрия и Нины"
           className="w-full h-full object-cover"
         />
       </div>
